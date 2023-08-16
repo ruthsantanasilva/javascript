@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt georgia;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var nome = prompt('Qual é o seu nome?')
+        var salarioreal = Number(prompt('Qual o seu salario?'))
+        document.write(`Seu nome tem ${nome.length} letras.<br>`)
+        document.write(`Seu nome em letras maiusculas é ${nome.toUpperCase()}.<br>`)
+        document.write(`Seu nome em letras minusculas é ${nome.toLowerCase()}.<br>`)
+        document.write(`Seu salário em real é ${salarioreal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} <br>`)
+        salario = salarioreal * 0.20
+        document.write(`E o seu salário em dólar é ${salario.toLocaleString('pt-BR', { style: 'currency', currency: 'USD' })}`)
+
+    </script>
+</body>
+
+</html>

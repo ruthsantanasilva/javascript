@@ -71,9 +71,16 @@
     </section>
 
     <script>
-        alert('Minha primeira mensagem!') // Comando de mensagem de alerta
-        confirm('Está gostando de JS?') // Comando de confirmação
-        prompt('Qual é o seu nome?') // O usuário insere o nome
+        var n1 = Number(prompt('Digite um numero: ')) // Converter string para number/float só com o Number!
+       var n2 = Number(prompt('Digite outro numero')) // Converter string para number/float só com o Number!
+
+       //var n1 = parseFloat(prompt('Digite um numero: ')) // Converter string para number/float
+       //var n2 = parseFloat(prompt('Digite outro numero')) // Converter string para number/float
+
+       var soma = n1 + n2 
+
+    alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`) // Template String ${variavel}
+
     </script>
 </body>
 
