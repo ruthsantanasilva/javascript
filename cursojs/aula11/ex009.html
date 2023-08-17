@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual o pais</title>
+</head>
+<body>
+    <h1>ESTE EXERCICIO ESTÁ EM EXECUÇÃO...</h1>
+
+    <h1>Você é estrangeiro ou não?</h1>
+    Qual o seu pais? <input type="text" name="pais01" id="pais01">
+    <input type="button" value="Enviar" onclick="pais()">
+    <div id="res">Resultado</div>
+
+    <script>
+        function pais(){
+            var p1 = document.querySelector("#pais01")
+            var res = document.querySelector("#res")
+
+
+            if(p1 == 'Brasil'){
+                res.innerHTML= `Você é Brasileiro!`
+            } else{
+                res.innerHTML =`Você é Estrangeiro!`
+            }
+        }
+    </script>
+    <!--var pais = 'EUA'
+console.log(`Vivendo em ${pais}`)
+if (pais == 'Brasil'){
+    console.log('Você é Brasileiro')
+} else{
+    console.log('Você é Estrangeiro')
+}-->
+</body>
+</html>
